@@ -26,7 +26,7 @@ SECRET_KEY = '+&0q2v(pygfrc^i-8-g9a_m#=ynp=bz3=#6=j=e3#4%5*mp*)+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arcane-gorge-49799.herokuapp.com', '0.0.0.0', '127.0.0.1']
 
 
 # Application definition
