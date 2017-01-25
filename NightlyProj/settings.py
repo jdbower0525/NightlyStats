@@ -86,6 +86,8 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+DATABASES['default'] = dj_database_url.config()
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
