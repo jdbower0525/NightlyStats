@@ -12,4 +12,4 @@ class DayViewSet(viewsets.ModelViewSet):
     serializer_class = DaySerializer
 
 def view_index(request):
-    return HttpResponse("This is where your stuff goes!")
+    return render(request, 'index.html')
