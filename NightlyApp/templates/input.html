@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,6 +8,7 @@
     </head>
     <body>
         <form>
+          <input class="input" type="text" id="date" name="input" placeholder="Date"/><br>
           <input class="input" type="text" id="net_sales" name="input" placeholder="Net Sales"/><br>
           <input class="input" type="text" id="forecast" name="input" placeholder="Forecast"/><br>
           <input class="input" type="text" id="food_sales" name="input" placeholder="Food Sales"/><br>
@@ -45,7 +48,11 @@
           <input class="input" type="text" id="lunch_sales" name="input" placeholder="Lunch Sales"/><br>
           <input class="input" type="text" id="PC_drawer" name="input" placeholder="PC Drawer"/><br>
 
-          <button id="culturePrefs" class="locationButton" type="submit">submit</button>
+          <button id="inputDay" class="locationButton" type="submit">Submit</button>
         </form>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/input.js' %}"></script>
     </body>
 </html>
