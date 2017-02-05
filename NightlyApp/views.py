@@ -11,5 +11,10 @@ class DayViewSet(viewsets.ModelViewSet):
     queryset = Day.objects.all().order_by('date')
     serializer_class = DaySerializer
 
+
 def view_index(request):
     return render(request, 'index.html')
+
+
+def view_input(request):
+    return render(request, 'input.html')
