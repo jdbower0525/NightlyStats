@@ -37,7 +37,7 @@ function inputDay(e){
     var food_sales = $("#food_sales").val()
     var beverage_sales = $("#beverage_sales").val()
     var context = {
-        username: userName,
+        date: date,
         password: userPassword,
         first_name: firstname,
         last_name: lastname,
